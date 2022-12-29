@@ -1,4 +1,4 @@
-import Home from "./components/Home"
+import Home from "./routes/Home"
 import Nav from "./components/Nav"
 
 function App() {
