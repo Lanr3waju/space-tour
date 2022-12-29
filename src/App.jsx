@@ -1,8 +1,8 @@
 
 function App() {
   return (
-    <div>
-      Hello world
+    <div className="bg-yellow-500 font-extrabold text-green-700">
+      Hello world!
     </div>
   )
 }
