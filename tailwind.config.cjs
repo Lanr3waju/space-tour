@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'home-desktop': "url(public/images/home-assets/background-home-desktop.jpg)",
-        'home-tablet': "url(public/images/home-assets/background-home-tablet.jpg)",
-        'home-mobile': "url(public/images/home-assets/background-home-mobile.jpg)"
+        'home-desktop': "url(/images/home-assets/background-home-desktop.jpg)",
+        'home-tablet': "url(/images/home-assets/background-home-tablet.jpg)",
+        'home-mobile': "url(/images/home-assets/background-home-mobile.jpg)"
       },
     },
   },

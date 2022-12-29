@@ -1,7 +1,7 @@
 
 function Home() {
     return (
-        <div className="font-bold bg-home-desktop">
+        <div className="font-bold">
             Hello world!
         </div>
     )

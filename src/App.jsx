@@ -2,7 +2,7 @@ import Home from "./components/Home"
 
 function App() {
   return (
-    <div>
+    <div className="lg:bg-home-desktop md:bg-home-tablet sm:bg-home-mobile bg-home-mobile min-h-screen">
       <Home />
     </div>
   )

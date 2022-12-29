@@ -2,7 +2,7 @@
 
 > Space touring website
 
-![screenshot](./src/assets/preview.png)
+![screenshot](./public/images/preview.png)
 
 ## Built With
 
