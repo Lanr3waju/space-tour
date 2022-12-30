@@ -1,12 +1,16 @@
-import Home from "./routes/Home"
-import Nav from "./components/Nav"
+// import Home from "./routes/Home";
+import Destination from "./routes/Destination";
+// import Crew from "./routes/Crew";
+// import Technology from "./routes/Technology";
 
 function App() {
   return (
-    <div className="lg:bg-home-desktop md:bg-home-tablet sm:bg-home-mobile bg-home-mobile bg-no-repeat bg-cover text-white">
-      <Nav />
-      <Home />
-    </div>
+    <>
+      {/* <Home /> */}
+      <Destination />
+      {/* <Crew /> */}
+      {/* <Technology /> */}
+    </>
   )
 }
 
