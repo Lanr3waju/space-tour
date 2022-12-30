@@ -32,6 +32,9 @@ module.exports = {
         'dark': '#0b0d17',
         'light': '#d0d6f9',
       },
+      animation: {
+        'spin-v-slow': 'spin 11s linear infinite',
+      }
     },
   },
   plugins: [],
