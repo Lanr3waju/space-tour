@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Nav from "../components/Nav"
 
 function Home() {
@@ -15,43 +16,43 @@ function Home() {
                     </p>
                 </section>
                 <section>
-                    <button type="button"
+                    <Link
+                        to={'/destination/1'}
                         className="text-dark
-                     before:bg-white
-                      before:rounded-[100%] 
-                      before:h-[320px] before:w-[320px] 
-                      before:left-2/4 
-                      before:top-2/4 
-                      before:-mt-[160px] 
-                      before:-ml-[160px] 
-                      before:opacity-0 
-                      before:hover:opacity-10  
-                      before:transition
-                      before:ease-linear
-                      before:delay-200
-                      before:hover:transition 
-                      before:hover:ease-linear
-                      before:hover:delay-200
-                      before:absolute 
-                      mt-[200px] 
-                      before:inset-0 
-                      ml-[220px] 
-                      text-3xl 
-                      font-bellefair 
-                      bg-white 
-                      flex 
-                      items-center 
-                      justify-center 
-                      rounded-[100%] 
-                      w-[200px] 
-                      h-[200px] 
-                      cursor-pointer
+                    before:bg-white
+                    before:rounded-[100%]
+                    before:h-[320px] before:w-[320px]
+                    before:left-2/4
+                    before:top-2/4
+                    before:-mt-[160px]
+                    before:-ml-[160px]
+                    before:opacity-0
+                    before:hover:opacity-10
+                    before:transition
+                    before:ease-linear
+                    before:delay-200
+                    before:hover:transition
+                    before:hover:ease-linear
+                    before:absolute
+                    mt-[200px]
+                    before:inset-0
+                    ml-[220px]
+                    text-3xl
+                    font-bellefair
+                    bg-white
+                    flex
+                    items-center
+                    justify-center
+                    rounded-[100%]
+                    w-[200px]
+                    h-[200px]
+                    cursor-pointer
                       relative">
                         EXPLORE
-                    </button>
+                    </Link>
                 </section>
             </main>
-        </div>
+        </div >
     )
 }
 
