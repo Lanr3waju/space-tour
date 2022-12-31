@@ -1,10 +1,13 @@
 
 import Nav from "../components/Nav"
+import Technologies from "../components/Technologies"
 
 function Technology() {
     return (
-        <div className="lg:bg-technology-desktop md:bg-technology-tablet sm:bg-technology-mobile bg-technology-mobile bg-no-repeat min-h-screen bg-cover text-white">
+        <div className="lg:bg-technology-desktop md:bg-technology-tablet sm:bg-technology-mobile bg-technology-mobile bg-no-repeat h-screen overflow-hidden bg-cover text-white">
             <Nav />
+            <p className="text-2xl font-barlow mt-14 ml-28 tracking-[5px]"><span className="mr-[28px] opacity-25">03</span>SPACE LAUNCH 101</p>
+            <Technologies />
 
         </div>
     )
