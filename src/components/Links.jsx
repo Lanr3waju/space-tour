@@ -21,7 +21,7 @@ function Links({ route, index }) {
     return (
         <Link
             style={active === route ? activeNav : {}}
-            to={`/${route}/1`}
+            to={`/${route}`}
             className='cursor-pointer pt-7 pb-7 hover:border-opacity-50 hover:border-white hover:transition-all transition-all border-opacity-0 b border-transparent border-b-2 uppercase' >
             <span className='font-bold mr-3 ml-1'>{index}</span>
             {route}

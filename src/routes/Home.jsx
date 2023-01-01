@@ -17,7 +17,7 @@ function Home() {
                 </section>
                 <section>
                     <Link
-                        to={'/destination/1'}
+                        to={'/destination'}
                         className="text-dark
                     before:bg-white
                     before:rounded-[100%]

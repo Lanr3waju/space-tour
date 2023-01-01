@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from '../images/shared-assets/logo.svg';
 import Links from './Links';
 
-function Nav() {
+function Nav({ activeDestination }) {
     const navs = [
         { route: 'home', index: '00' },
         { route: 'destination', index: '01' },
@@ -11,7 +11,7 @@ function Nav() {
     ]
 
     const LinksEl = navs.map(({ route, index }) => (
-        <Links route={route} index={index} key={route} />
+        <Links activeDestination={activeDestination} route={route} index={index} key={route} />
     ))
 
     return (
