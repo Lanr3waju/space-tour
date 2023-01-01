@@ -6,15 +6,17 @@ import Technology from "./routes/Technology";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/destination" element={<Destination />} />
-        <Route path="/crew" element={<Crew />} />
-        <Route path="/technology" element={<Technology />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="bg-slate-700 min-h-screen">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/destination" element={<Destination />} />
+          <Route path="/crew" element={<Crew />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 
