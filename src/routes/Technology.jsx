@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Nav from "../components/Nav"
-import Technologies from "../components/Technologies"
-import data from "../technologyData";
+import Nav from "../components/navBar/Nav"
+import Technologies from "../components/technology/Technologies"
+import data from "../components/technology/technologyData";
 
 function Technology() {
     const [activeTech, setActiveTech] = useState('launch vehicle');

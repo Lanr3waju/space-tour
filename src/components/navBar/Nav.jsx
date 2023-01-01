@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from '../images/shared-assets/logo.svg';
+import logo from '../../images/shared-assets/logo.svg';
 import Links from './Links';
 
 function Nav({ activeDestination }) {

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Nav from "../components/Nav"
-import Destinations from "../components/Destinations"
-import data from "../destinationData";
+import Nav from "../components/navBar/Nav"
+import Destinations from "../components/destination/Destinations"
+import data from "../components/destination/destinationData";
 
 function Destination() {
     const [activeDestination, setActiveDestination] = useState('moon');

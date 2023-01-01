@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Nav from "../components/Nav"
-import Crews from "../components/Crews"
-import data from "../crewData";
+import Nav from "../components/navBar/Nav"
+import Crews from "../components/crew/Crews"
+import data from "../components/crew/crewData";
 
 function Crew() {
     const [activeCrew, setActiveCrew] = useState('douglas hurley');

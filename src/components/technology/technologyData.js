@@ -1,6 +1,6 @@
-import launchVehicle from './images/technology/image-launch-vehicle-portrait.jpg'
-import spaceport from './images/technology/image-spaceport-portrait.jpg'
-import spaceCapsule from './images/technology/image-space-capsule-portrait.jpg'
+import launchVehicle from '../../images/technology/image-launch-vehicle-portrait.jpg'
+import spaceport from '../../images/technology/image-spaceport-portrait.jpg'
+import spaceCapsule from '../../images/technology/image-space-capsule-portrait.jpg'
 
 const data = [
     {

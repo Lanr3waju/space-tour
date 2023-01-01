@@ -1,7 +1,7 @@
-import moon from './images/destination/image-moon.png'
-import europa from './images/destination/image-europa.png'
-import mars from './images/destination/image-mars.png'
-import titan from './images/destination/image-titan.png'
+import moon from '../../images/destination/image-moon.png'
+import europa from '../../images/destination/image-europa.png'
+import mars from '../../images/destination/image-mars.png'
+import titan from '../../images/destination/image-titan.png'
 
 const data = [
     {
