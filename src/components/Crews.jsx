@@ -1,25 +1,32 @@
-import douglas from '../images/crew/image-douglas-hurley.png'
-function Destinations() {
+import CrewSpace from './CrewSpace'
+function Destinations(props) {
+
+    const {
+        activeCrew,
+        setActiveCrew,
+        image,
+        name,
+        title,
+        bio
+    } = props
+    const spaceCrews = ['douglas hurley', 'mark shuttleworth', 'victor glover', 'anousheh ansari']
+
+    const crewSpaceEl = spaceCrews.map((crew) => (
+        <CrewSpace key={crew} id={crew} activeCrew={activeCrew} setActiveCrew={setActiveCrew} />
+    ))
     return (
         <div className="flex  p-4">
-            <section className='w-[490px] ml-28 mt-4'>
-                <h2 className='font-bellefair mt-12 opacity-50 mb-4 text-3xl'>COMMANDER</h2>
-                <h2 className='font-bellefair text-5xl'>DOUGLAS HURLEY</h2>
-                <p className='max-w-md font-barlow text-light text-lg leading-8 mt-8 mb-12'>
-                    Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+            <section className='w-[550px] ml-28 mt-4'>
+                <h2 className='font-bellefair mt-12 opacity-50 mb-4 text-3xl uppercase'>{title}</h2>
+                <h2 className='font-bellefair text-5xl uppercase'>{name}</h2>
+                <p className='max-w-[550px] font-barlow text-light text-lg leading-8 mt-8 mb-12'>
+                    {bio}
                 </p>
-                <ul className='flex mt-3 w-[100%]'>
-                    <li className='w-4 h-4 m-2 rounded-full opacity-20 cursor-pointer hover:opacity-50 transition-all bg-white'>
-                    </li>
-                    <li className='w-4 h-4 m-2 rounded-full opacity-20 cursor-pointer hover:opacity-50 transition-all bg-white'>
-                    </li>
-                    <li className='w-4 h-4 m-2 rounded-full opacity-20 cursor-pointer hover:opacity-50 transition-all bg-white'>
-                    </li>
-                    <li className='w-4 h-4 m-2 rounded-full opacity-20 cursor-pointer hover:opacity-50 transition-all bg-white'>
-                    </li>
-                </ul>
+                <div className='flex mt-3 w-[100%]'>
+                    {crewSpaceEl}
+                </div>
             </section>
-            <img className='ml-52 w-[400px] -mt-24' src={douglas} alt="Planet" />
+            <img className='ml-52 w-[400px] -mt-24' src={image} alt="Planet" />
         </div>
     )
 }
