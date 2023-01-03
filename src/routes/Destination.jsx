@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Nav from "../components/navBar/Nav";
 import Destinations from "../components/destination/Destinations";
-import data from "../components/destination/destinationData";
+import { destenation } from "../components/destination/destinationData";
 
 function Destination() {
   const [activeDestination, setActiveDestination] = useState("moon");
-  const destinationData = data.find(
+  const destinationData = destenation.find(
     ({ destination }) => destination === activeDestination
   );
   const { image, destination, description, distance, travelTime } =
