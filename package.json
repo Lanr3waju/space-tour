@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "format": "npx prettier --write .",
     "lint": "eslint \"src/**/*.{js,jsx}\" --fix"
   },
   "dependencies": {
@@ -22,10 +22,10 @@
     "@vitejs/plugin-react": "^3.0.0",
     "autoprefixer": "^10.4.12",
     "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.18",
     "prettier": "^2.7.1",

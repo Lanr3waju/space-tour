@@ -1,24 +1,27 @@
-import { Link } from "react-router-dom"
-import Nav from "../components/navBar/Nav"
+import { Link } from "react-router-dom";
+import Nav from "../components/navBar/Nav";
 
 function Home() {
-    return (
-        <div className="lg:bg-home-desktop md:bg-home-tablet sm:bg-home-mobile bg-home-mobile bg-no-repeat bg-cover text-white">
-            <Nav />
-            <main className="relative flex">
-                <section className="flex flex-col m-40 w-[450px]">
-                    <p className="font-barlow text-2xl tracking-widest">SO, YOU WANT TO TRAVEL TO</p>
-                    <h2 className="font-bellefair text-9xl mt-6 mb-6 w-[444px]">SPACE</h2>
-                    <p className="max-w-[440px] text-justify font-barlow text-light">
-                        Let’s face it; if you want to go to space,
-                        you might as well genuinely go to outer space and not hover kind of on the edge of it.
-                        Well sit back, and relax because we’ll give you a truly out of this world experience!
-                    </p>
-                </section>
-                <section>
-                    <Link
-                        to={'/destination'}
-                        className="text-dark
+  return (
+    <div className="lg:bg-home-desktop md:bg-home-tablet sm:bg-home-mobile bg-home-mobile bg-no-repeat bg-cover text-white">
+      <Nav />
+      <main className="relative flex">
+        <section className="flex flex-col m-40 w-[450px]">
+          <p className="font-barlow text-2xl tracking-widest">
+            SO, YOU WANT TO TRAVEL TO
+          </p>
+          <h2 className="font-bellefair text-9xl mt-6 mb-6 w-[444px]">SPACE</h2>
+          <p className="max-w-[440px] text-justify font-barlow text-light">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </section>
+        <section>
+          <Link
+            to={"/destination"}
+            className="text-dark
                     before:bg-white
                     before:rounded-[100%]
                     before:h-[320px] before:w-[320px]
@@ -47,13 +50,14 @@ function Home() {
                     w-[200px]
                     h-[200px]
                     cursor-pointer
-                      relative">
-                        EXPLORE
-                    </Link>
-                </section>
-            </main>
-        </div >
-    )
+                      relative"
+          >
+            EXPLORE
+          </Link>
+        </section>
+      </main>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
