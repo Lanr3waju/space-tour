@@ -11,6 +11,7 @@
     "lint": "eslint \"src/**/*.{js,jsx}\" --fix"
   },
   "dependencies": {
+    "classnames": "^2.3.2",
     "html-entities": "^2.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
