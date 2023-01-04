@@ -1,16 +1,12 @@
 import TechnologySpace from "./TechnologySpace";
 
-function Technologies({ activeTech, setActiveTech, image, name, description }) {
-  const tech = [
-    { index: 1, terminology: "launch vehicle" },
-    { index: 2, terminology: "spaceport" },
-    { index: 3, terminology: "space capsule" },
-  ];
-  const technologySpaceEl = tech.map(({ index, terminology }) => (
+function Technologies({ activeTech, setActiveTech, image, name, description, tech }) {
+
+  const technologySpaceEl = tech.map((name) => (
     <TechnologySpace
-      index={index}
-      terminology={terminology}
-      key={terminology}
+      techIndex={tech.indexOf(name) + 1}
+      name={name}
+      key={name}
       activeTech={activeTech}
       setActiveTech={setActiveTech}
     />

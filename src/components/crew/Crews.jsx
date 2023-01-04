@@ -1,12 +1,6 @@
 import CrewSpace from "./CrewSpace";
 function Destinations(props) {
-  const { activeCrew, setActiveCrew, image, name, title, bio } = props;
-  const spaceCrews = [
-    "douglas hurley",
-    "mark shuttleworth",
-    "victor glover",
-    "anousheh ansari",
-  ];
+  const { activeCrew, setActiveCrew, image, name, title, bio, spaceCrews } = props;
 
   const crewSpaceEl = spaceCrews.map((crew) => (
     <CrewSpace

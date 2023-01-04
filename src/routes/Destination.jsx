@@ -8,8 +8,9 @@ function Destination() {
   const destinationData = destenation.find(
     ({ destination }) => destination === activeDestination
   );
-  const { image, destination, description, distance, travelTime } =
-    destinationData;
+  const { image, destination, description, distance, travelTime } = destinationData;
+
+  const spaceDestinations = destenation.map(({ destination }) => destination)
   return (
     <div className="lg:bg-destination-desktop md:bg-destination-tablet sm:bg-destination-mobile bg-destination-mobile bg-no-repeat min-h-screen bg-cover text-white">
       <Nav />
@@ -22,6 +23,7 @@ function Destination() {
         image={image}
         destination={destination}
         description={description}
+        spaceDestinations={spaceDestinations}
         distance={distance}
         travelTime={travelTime}
       />

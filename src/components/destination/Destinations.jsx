@@ -1,7 +1,6 @@
 import DestinationSpace from "./DestinationSpace";
 
 function Destinations(props) {
-  const spaceDestinations = ["moon", "mars", "europa", "titan"];
 
   const {
     activeDestination,
@@ -11,6 +10,7 @@ function Destinations(props) {
     description,
     distance,
     travelTime,
+    spaceDestinations
   } = props;
 
   const DestinationSpaceEl = spaceDestinations.map((destinations) => (

@@ -7,8 +7,9 @@ function Technology() {
   const [activeTech, setActiveTech] = useState("launch vehicle");
   const crewData = technology.find(({ name }) => name === activeTech);
   const { image, name, description } = crewData;
+  const tech = technology.map(({ name }) => name)
   return (
-    <div className="lg:bg-technology-desktop md:bg-technology-tablet sm:bg-technology-mobile bg-technology-mobile bg-no-repeat h-screen overflow-hidden bg-cover text-white">
+    <div className="lg:bg-technology-desktop md:bg-technology-tablet sm:bg-technology-mobile bg-technology-mobile bg-no-repeat min-h-screen bg-cover text-white">
       <Nav />
       <p className="text-2xl font-barlow mt-14 ml-28 tracking-[5px]">
         <span className="mr-[28px] opacity-25">03</span>SPACE LAUNCH 101
@@ -18,6 +19,7 @@ function Technology() {
         setActiveTech={setActiveTech}
         image={image}
         name={name}
+        tech={tech}
         description={description}
       />
     </div>
