@@ -25,7 +25,7 @@ function Nav({ activeDestination }) {
         <img src={logo} alt="logo" />
       </Link>
       <div className="h-[1px] bg-white w- lg:w-[35%] md:w-[10%] absolute ml-16 z-10"></div>
-      <nav className="w-[830px] bg-[#ffffff0a] filter backdrop-blur-2xl font-barlow text-base flex justify-center">
+      <nav className="w-8/12 bg-[#ffffff0a] filter backdrop-blur-2xl font-barlow text-base flex justify-center">
         <div className="flex w-3/4 justify-around">{LinksEl}</div>
       </nav>
     </header>

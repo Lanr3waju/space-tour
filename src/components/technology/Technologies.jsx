@@ -16,8 +16,8 @@ function Technologies({ activeTech, setActiveTech, image, name, description, tec
       <nav>
         <div className="ml-28 mt-16">{technologySpaceEl}</div>
       </nav>
-      <section className="w-[500px] ml-28 mt-16">
-        <h3 className="font-barlow opacity-50 mb-4 t text-base text-light tracking-[2.7px]">
+      <section className="w-5/12 ml-28 mt-16">
+        <h3 className="font-barlow opacity-50 mb-4 t text-base text-light tracking-wide">
           THE TERMINOLOGY...
         </h3>
         <h2 className="font-bellefair text-5xl uppercase">{name}</h2>
@@ -26,7 +26,7 @@ function Technologies({ activeTech, setActiveTech, image, name, description, tec
         </p>
       </section>
       <img
-        className="ml-32 w-[400px] -m-4 h-[450px] -mt-16"
+        className="ml-32 w-4/12 -m-4 h-4/12 -mt-16"
         src={image}
         alt="Planet"
       />
