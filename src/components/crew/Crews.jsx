@@ -1,6 +1,7 @@
 import CrewSpace from "./CrewSpace";
 function Destinations(props) {
-  const { activeCrew, setActiveCrew, image, name, title, bio, spaceCrews } = props;
+  const { activeCrew, setActiveCrew, image, name, title, bio, spaceCrews } =
+    props;
 
   const crewSpaceEl = spaceCrews.map((crew) => (
     <CrewSpace

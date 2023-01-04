@@ -7,7 +7,7 @@ function Crew() {
   const [activeCrew, setActiveCrew] = useState("douglas hurley");
   const crewData = crew.find(({ name }) => name === activeCrew);
   const { image, title, name, bio } = crewData;
-  const spaceCrews = crew.map(({ name }) => name)
+  const spaceCrews = crew.map(({ name }) => name);
   return (
     <div className="lg:bg-crew-desktop md:bg-crew-tablet sm:bg-crew-mobile bg-crew-mobile bg-no-repeat bg-cover text-white min-h-screen">
       <Nav />

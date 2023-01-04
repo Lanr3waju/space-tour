@@ -7,7 +7,7 @@ function Technology() {
   const [activeTech, setActiveTech] = useState("launch vehicle");
   const crewData = technology.find(({ name }) => name === activeTech);
   const { image, name, description } = crewData;
-  const tech = technology.map(({ name }) => name)
+  const tech = technology.map(({ name }) => name);
   return (
     <div className="lg:bg-technology-desktop md:bg-technology-tablet sm:bg-technology-mobile bg-technology-mobile bg-no-repeat min-h-screen bg-cover text-white">
       <Nav />

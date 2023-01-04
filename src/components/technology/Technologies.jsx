@@ -1,7 +1,13 @@
 import TechnologySpace from "./TechnologySpace";
 
-function Technologies({ activeTech, setActiveTech, image, name, description, tech }) {
-
+function Technologies({
+  activeTech,
+  setActiveTech,
+  image,
+  name,
+  description,
+  tech,
+}) {
   const technologySpaceEl = tech.map((name) => (
     <TechnologySpace
       techIndex={tech.indexOf(name) + 1}
