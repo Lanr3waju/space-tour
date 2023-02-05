@@ -1,6 +1,6 @@
 name: Linters
 
-on: pull_request
+on: [pull_request, push]
 
 env:
   FORCE_COLOR: 1
@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
         with:
           node-version: "19.x"
       - name: Setup ESLint

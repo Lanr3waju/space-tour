@@ -1,20 +1,24 @@
-# SPACE TOUR
+# SPACE TOUR WEBSITE
 
-> Space touring website
+> This is a space touring website built with Vite, React, and Tailwind CSS, it's part of the intermediate challenges on frontend mentors
 
-![screenshot](./src/assets/preview.png)
+![screenshot](./public/images/preview.png)
 
 ## Built With
 
+- Vite
+
 - React
 
-- JSX
-
-- Javascript
+  - JSX
+  - classNames Library
+  - React Router
+  - Hooks
+    - useEffect
+    - useState
+    - useLocation
 
 - Tailwind
-
-- Vite
 
 ## Live Demo
 
